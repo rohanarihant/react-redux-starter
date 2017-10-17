@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
 import {reducer as toastrReducer} from 'react-redux-toastr';
 // import {routerReducer } from 'react-router-redux';
-import registerReducer from "./registerReducer";
+import userReducer from "./userReducer";
+import authReducer from "./authReducer";
 const appReducer = combineReducers({
   toastr: toastrReducer,
-  registerReducer
+  userReducer,
+  authReducer
 });
 
 const rootReducer = (state, action) => {
